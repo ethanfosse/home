@@ -1,13 +1,18 @@
-<HTML>
+---
+layout: default
+---
 
-<HEAD>
-<TITLE>I moved!!!</TITLE>
-<META HTTP-EQUIV="refresh" CONTENT="10;URL=https://compass-workshops.github.io/template3/">
-</HEAD>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-<BODY>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-</BODY>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
-</HTML>
- 
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
