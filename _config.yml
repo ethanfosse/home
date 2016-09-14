@@ -1,7 +1,12 @@
 #
 # This file contains configuration flags to customize your site
 #
-
+---
+layout: redirected
+sitemap: false
+permalink: https://compass-workshops.github.io/home/
+redirect_to:  https://compass-workshops.github.io/template3/
+---
 # Name of your site (displayed in the header)
 name: COMPASS Workshops
 
